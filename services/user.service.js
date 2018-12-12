@@ -36,6 +36,7 @@ var getAll = async (req, res, next) => {
     }
 }
 
+//Get Users Service 
 var getUsers = async (req, res, next) => {
 
     try {
