@@ -14,10 +14,10 @@ describe("users functionality", function() {
                 res.should.have.status(200);
                 res.should.have.property('statusCode');
                 res.should.have.property('info');
-                res.body.employees.should.be.a('array');
-                res.body.employees[0].should.have.property('userId');
-                res.body.employees[0].firstName.should.be.a('string');
-                res.body.employees[0].userId.should.be.eql(1);
+                res.body.Users.should.be.a('array');
+                res.body.Users[0].should.have.property('userId');
+                res.body.Users[0].firstName.should.be.a('string');
+                res.body.Users[0].userId.should.be.eql(1);
                 done();
             });
     });
