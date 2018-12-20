@@ -22,7 +22,7 @@ const logger = winston.createLogger({
     format: winston.format.combine(winston.format.colorize(), alignColorsAndTime),
     transports: [
         new winston.transports.File({
-            filename: 'logs/errors.log',
+            filename: 'errors.log',
             level: 'error',
             handleExceptions: true,
             // json: false,

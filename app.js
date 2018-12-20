@@ -11,7 +11,7 @@ app.use('/users', usersRouter);
 
 app.use(function (req, res, next) {
   var err = new Error('Not Found');
-  err.Status = 404;
+  err.status = 404;
   err.Info = "Route Not Found"
   next(err);
 });
@@ -80,3 +80,5 @@ app.use(function (err, req, res, next) {
 app.listen(3000,()=>{
   console.log("server is listening on 3000")
 });
+
+module.exports=app;
